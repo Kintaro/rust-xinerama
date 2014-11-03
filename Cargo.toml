@@ -1,0 +1,13 @@
+[package]
+
+name = "xinerama"
+version = "0.0.1"
+authors = ["Simon Wollwage"]
+
+[dependencies.xlib]
+git = "https://github.com/servo/rust-xlib.git"
+
+[lib]
+
+name = "xinerama"
+crate-type = ["rlib"]
