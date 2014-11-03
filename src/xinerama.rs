@@ -9,22 +9,22 @@ use xlib::XID;
 
 #[repr(C)]
 pub struct XineramaScreenInfo {
-   screen_number: c_int,
-   x_org : c_short,
-   y_org : c_short,
-   width : c_short,
-   height : c_short
+   pub screen_number: c_int,
+   pub x_org : c_short,
+   pub y_org : c_short,
+   pub width : c_short,
+   pub height : c_short
 }
 
 #[repr(C)]
 pub struct XPanoramiXInfo {
-    window: Window,
-    screen: c_int,
-    State: c_int,   
-    width: c_int,    
-    height: c_int,    
-    ScreenCount: c_int,
-    eventMask: XID      
+    pub window: Window,
+    pub screen: c_int,
+    pub State: c_int,   
+    pub width: c_int,    
+    pub height: c_int,    
+    pub ScreenCount: c_int,
+    pub eventMask: XID      
 }
 
 #[link(name="Xinerama")]
