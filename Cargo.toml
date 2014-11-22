@@ -3,9 +3,11 @@
 name = "xinerama"
 version = "0.0.1"
 authors = ["Simon Wollwage"]
+license = "BSD"
+description = "A rust wrapper around libXinerama"
 
 [dependencies.xlib]
-git = "https://github.com/servo/rust-xlib.git"
+git = "https://github.com/Kintaro/rust-xlib.git"
 
 [lib]
 
