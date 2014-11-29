@@ -12,4 +12,4 @@ git = "https://github.com/Kintaro/rust-xlib.git"
 [lib]
 
 name = "xinerama"
-crate-type = ["rlib"]
+crate-type = ["dylib, rlib"]
