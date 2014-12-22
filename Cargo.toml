@@ -8,7 +8,7 @@ description = "A rust wrapper around libXinerama"
 
 [dependencies.xlib]
 git = "https://github.com/Kintaro/rust-xlib.git"
-branch = "sizehint"
+branch = "wtftw"
 
 [lib]
 
