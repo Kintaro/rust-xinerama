@@ -8,6 +8,7 @@ use xlib::Drawable;
 use xlib::XID;
 
 #[repr(C)]
+#[derive(Copy, Clone)]
 pub struct XineramaScreenInfo {
    pub screen_number: c_int,
    pub x_org : c_short,
@@ -17,6 +18,7 @@ pub struct XineramaScreenInfo {
 }
 
 #[repr(C)]
+#[derive(Copy, Clone)]
 pub struct XPanoramiXInfo {
     pub window: Window,
     pub screen: c_int,
