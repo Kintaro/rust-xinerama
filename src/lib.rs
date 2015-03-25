@@ -4,6 +4,7 @@
 #![crate_type = "rlib"]
 
 #![feature(globs)]
+#![feature(libc)]
 
 extern crate libc;
 extern crate xlib;
