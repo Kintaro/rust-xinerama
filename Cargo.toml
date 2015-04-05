@@ -6,6 +6,9 @@ authors = ["Simon Wollwage"]
 license = "BSD"
 description = "A rust wrapper around libXinerama"
 
+[dependencies]
+libc = "*"
+
 [dependencies.xlib]
 git = "https://github.com/Kintaro/rust-xlib.git"
 branch = "wtftw"

@@ -1,6 +1,3 @@
-#![allow(non_uppercase_statics)]
-#![allow(non_camel_case_types)]
-
 use libc::*;
 use xlib::Display;
 use xlib::Window;
@@ -22,11 +19,11 @@ pub struct XineramaScreenInfo {
 pub struct XPanoramiXInfo {
     pub window: Window,
     pub screen: c_int,
-    pub State: c_int,   
-    pub width: c_int,    
-    pub height: c_int,    
-    pub ScreenCount: c_int,
-    pub eventMask: XID      
+    pub state: c_int,
+    pub width: c_int,
+    pub height: c_int,
+    pub screen_count: c_int,
+    pub event_mask: XID
 }
 
 #[link(name="Xinerama")]
@@ -36,6 +33,6 @@ extern {
     pub fn XPanoramiXGetScreenSize(dpy: *mut Display, drawable: Drawable, screen_num: c_int, panoramix_info: *mut XPanoramiXInfo) -> c_int;
     pub fn XineramaQueryExtension(dpy: *mut Display, event: *mut c_int, error: *mut c_int) -> c_int;
     pub fn XineramaQueryVersion(dpy: *mut Display, major: *mut c_int, minor: *mut c_int) -> c_int;
-	pub fn XineramaIsActive(dpy: *mut Display) -> c_int;
-	pub fn XineramaQueryScreens(dpy: *mut Display, number: *mut c_int) -> *const XineramaScreenInfo;
+    pub fn XineramaIsActive(dpy: *mut Display) -> c_int;
+    pub fn XineramaQueryScreens(dpy: *mut Display, number: *mut c_int) -> *const XineramaScreenInfo;
 }
